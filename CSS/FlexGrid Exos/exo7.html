@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      /* .grid {
+        background-color: #ddd;
+        box-sizing: border-box;
+        padding: 20px;
+        width: 600px;
+        height: 300px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-content: space-between;
+      }
+      .grid div {
+        background-color: blue;
+        text-align: center;
+        width: calc(520px / 3);
+        color: white;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* .grid .two {
+        height: calc(240px / 2);
+      } 
+      .row {
+        height: 40px;
+      }
+      .two {
+        height: 200px;
+      } */
+      .grid {
+        background-color: #ddd;
+        box-sizing: border-box;
+        padding: 20px;
+        width: 600px;
+        height: 300px;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: 50px 1fr;
+        gap: 20px;
+      }
+      .grid div {
+        background-color: blue;
+        text-align: center;
+
+        color: white;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+    <div class="grid">
+      <div class="row">Element</div>
+      <div class="row">Element</div>
+      <div class="row">Element</div>
+      <div class="two">Element</div>
+      <div class="two">Element</div>
+      <div class="two">Element</div>
+    </div>
+  </body>
+</html>

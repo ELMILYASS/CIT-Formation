@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+      }
+      .page {
+        width: 100%;
+        height: 100vh;
+        background-color: gray;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .content,
+      .sidebar,
+      .footer {
+        background-color: rgb(98, 98, 177);
+      }
+      .header,
+      .footer {
+        height: 10%;
+      }
+      .main-area {
+        height: 70%;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .header .logo {
+        width: 20%;
+        background-color: rgb(98, 98, 177);
+        text-align: center;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .header ul {
+        background-color: rgb(98, 98, 177);
+        width: 70%;
+        display: flex;
+        justify-content: flex-end;
+        height: 100%;
+        align-items: center;
+      }
+
+      .header ul li {
+        margin: 0 20px;
+      }
+
+      .main-area {
+        display: flex;
+        justify-content: space-between;
+      }
+      .content {
+        width: 70%;
+        padding: 10px;
+      }
+      .sidebar {
+        width: 25%;
+        padding: 10px;
+      }
+
+      .footer {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        justify-content: space-between;
+      }
+
+      @media (max-width: 712px) {
+        .header {
+          flex-direction: column;
+          gap: 20px;
+        }
+        .header ul {
+          width: 100%;
+          justify-content: center;
+        }
+        .main-area {
+          flex-direction: column;
+        }
+        .content,
+        .sidebar {
+          width: 100%;
+          height: 40%;
+        }
+      }
+    </style>
+    <div class="page">
+      <div class="header">
+        <div class="logo">Logo</div>
+        <ul class="links">
+          <li>Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="main-area">
+        <div class="content">Content</div>
+        <div class="sidebar">Sidebar</div>
+      </div>
+      <div class="footer">
+        <div class="copyright">Copyright 2023</div>
+        <div class="design">CIT</div>
+      </div>
+    </div>
+  </body>
+</html>
